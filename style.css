@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-secondary);
+}
+
+:root {
+  /* colors */
+  --bg-page: #ffffff;
+  --bg-accent: hsl(330, 100%, 98%);
+  --text-primary: hsl(24, 5%, 18%);
+  --text-secendary: hsl(24, 5%, 44%);
+  --bg-card: hsl(36, 100%, 99%);
+  --text-title: hsl(14, 45%, 36%);
+  --text-accent: hsl(332, 51%, 32%);
+  /* fonts */
+  --font-primary: "PT Serif", serif;
+  --font-secondary: "Outfit", sans-serif;
+  /* spacing */
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  /* radius */
+  --radius: 12px;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.6;
+  padding: 20px;
+}
+.container {
+  padding: var(--space-4);
+}
+.recipe {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+}
+.recipe img {
+  width: 100%;
+  border-radius: var(--radius);
+  display: block;
+}
+h1 {
+  font-size: 2rem;
+  font-family: var(--font-primary);
+  line-height: 1.2;
+  color: var(--text-title);
+  margin-bottom: var(--space-3);
+}
+h2 {
+  font-size: 1.1rem;
+  color: var(--text-accent);
+  margin-bottom: var(--space-2);
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: var(--space-3);
+}
+ul {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: var(--space-1);
+  padding-left: var(--space-2);
+}
+
+li::marker {
+  color: var(--text-accent);
+  font-weight: 600;
+}
+
+.recipe-title {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+}
+
+p {
+  color: var(--text-secendary);
+}
+.recipe-meta {
+  color: var(--text-secendary);
+  margin-bottom: var(--space-4);
+  background-color: var(--bg-accent);
+  padding: var(--space-4);
+  border-radius: var(--radius);
+}
+.recipe-meta h1 {
+  font-size: 1.1rem;
+}
+hr {
+  border: none;
+  border-top: 1px solid #e3ddd7;
+  margin: 24px 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+tr {
+  border-bottom: 1px solid #e3ddd7;
+}
+
+td {
+  padding: 12px 0;
+}
+th {
+  text-align: left;
+  font-weight: 400;
+}
+
+td:last-child {
+  text-align: left;
+  font-weight: 700;
+  color: #854632;
+}
