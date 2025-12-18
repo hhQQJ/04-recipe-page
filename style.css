@@ -80,7 +80,9 @@ li::marker {
   color: var(--text-accent);
   font-weight: 600;
 }
-
+li > span {
+  font-weight: 700;
+}
 .recipe-title {
   font-size: 2.5rem;
   color: var(--text-primary);
